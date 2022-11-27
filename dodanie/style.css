@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.836);
+    box-sizing: border-box;
+}
+.body{
+    font-family: Helvetica;
+    max-height: 1080px;
+    max-width: 1920px;
+}
+
+.lewy{
+text-align: center;
+background-color: rgba(19, 19, 19, 0.959);
+color: white;
+height: 1000;
+width: auto;
+/*float: left;*/
+grid-area: lewo;
+}
+
+.prawy_gora{
+    background-color: rgba(12, 12, 12, 0.945);
+    height: 50px;
+    width: auto;
+    text-align: center;
+    /*float: right;*/
+    grid-area: prawy_gora;
+}
+.prawy_srodek{
+    background-color: rgb(41, 41, 41);
+    height: auto;
+    width: auto;
+    text-align: center;
+
+    /*float: right;*/
+    grid-area: prawy_srodek;
+}
+.prawy_dol{
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    height: 300px;
+    width: auto;
+    text-align: center;
+    /* float: right; */
+    grid-area: prawy_dol;
+}
+.prawy_dol form{
+    line-height: 1.5;
+    margin: 30px;
+}
+.przycisk {
+    color: black;
+    background-color: rgb(215, 230, 8);
+}
+.stoopka{
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    /*float: none;*/
+    grid-area: stoopka;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "lewo prawy_gora prawy_gora prawy_gora"
+    "lewo prawy_srodek prawy_srodek prawy_srodek"
+    "lewo prawy_dol prawy_dol prawy_dol"
+    "stoopka stoopka stoopka stoopka";
+}

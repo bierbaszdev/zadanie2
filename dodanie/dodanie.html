@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dodaj Film</title>
+</head>
+<body>
+<div class="grid">
+    <div class="lewy">
+        <h3>Dostęne gatunki</h3>
+        <ol>
+            <li>Romans</li>
+            <li>Thriller</li>
+            <li>Akcja</li>
+            <li>Romans</li>
+            <li>Dramat</li>
+            <li>Komedie</li>
+            <li>Dokumentalne</li>
+            <li>INNY</li>
+        </ol>
+        <img src="../gif/gif2.gif" style="width:50%; height:auto;">
+        </div>
+
+        <div class="prawy_gora">
+            <h1>Filmoteka</h1>
+        </div>
+
+        <div class="prawy_srodek">
+            <img src="../gif/gif1.gif" style="width:50%; height:auto;">
+        </div>
+        <div class="prawy_dol">
+            <form action="dodaj.php" method="post">
+                Tytuł
+                <input type="text" name="tytul" class="przycisk"><br>
+                Gatunek filmu
+                <input type="number" name="gatunek" class="przycisk"><br>
+                Opis
+                <input type="text" name="opis" class="przycisk"><br>
+                Ocena
+                <input type="number" name="ocena" min="1" max="5" class="przycisk"><br>
+            <input type="reset" value="Wyczyść" class="przycisk">
+            <input type="submit" value="Dodaj" class="przycisk">
+        </form>
+        </div>
+        <div class="stoopka">
+        <a href="../index.html">Powrót do strony głównej</a>
+        <a href="../odczyt/odczyt.php">Baza Filmów</a>
+        </div>
+</div>
+
+</body>
+</html>
